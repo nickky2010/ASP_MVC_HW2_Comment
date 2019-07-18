@@ -29,16 +29,16 @@
 
 #### Регистрация пользователя:
 
-![Alt text](/Image/3.PNG?raw=true "Регистрация пользователя")
+![Alt text](/Task/Image/3.PNG?raw=true "Регистрация пользователя")
 
 #### Аутентификация и авторизация:
 
-![Alt text](/Image/4.PNG?raw=true "Аутентификация и авторизация")
+![Alt text](/Task/Image/4.PNG?raw=true "Аутентификация и авторизация")
 
 #### Вид главной страницы:
 
-![Alt text](/Image/5.PNG?raw=true "Вид главной страницы")
+![Alt text](/Task/Image/5.PNG?raw=true "Вид главной страницы")
 
 #### Комментирование:
 
-![Alt text](/Image/6.PNG?raw=true "Комментирование")
+![Alt text](/Task/Image/6.PNG?raw=true "Комментирование")
