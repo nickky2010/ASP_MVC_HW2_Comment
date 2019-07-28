@@ -1,31 +1,57 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
+﻿@using ASP_MVC_HW2_Comment.App_LocalResources
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+@model IEnumerable<BLL.Models.ViewModel.PokemonViewModel>
+    <div class="container-fluid">
+        @if (Resource.CurrentLang == "русский")
+        {
+            <img src="@Url.Content("~/Images/Russian_Pokemon_logo.svg")" class="card-img-top" height="200" alt="..."><img />
+        }
+        else if (Resource.CurrentLang == "english")
+        {
+            <img src="@Url.Content("~/Images/English_Pokemon_logo.svg")" class="card-img-top" height="200" alt="..."><img />
+        }
+        <div class="row d-flex my-flex-cont">
+            <div class="row d-flex col-6">
+                @for (var i = 0; i < Model.Count();)
+                {
+                    <div class="row d-flex justify-content-center">
+                        @for (var j = 0; j < 3; j++, i++)
+                        {
+                            <div class="card mx-2 my-2 col-md-3 p-0">
+                                <img src="@Url.Content(Model.ElementAt(i).PathPicture)" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">@Model.ElementAt(i).Name</h5>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+            <div class="row d-flex col-6 text">
+                <p>
+                    <b>@Resource.IndexText1</b> — @Resource.IndexText2
+                </p>
+                <p>
+                    @Resource.IndexText3 <b>@Resource.IndexText4</b> @Resource.IndexText5
+                </p>
+                <p>
+                    @Resource.IndexText6
+                </p>
+                <p>
+                    @Resource.IndexText7 <b>@Resource.IndexText8</b> @Resource.IndexText9 <b>@Resource.IndexText10</b> @Resource.IndexText11
+                </p>
+                <p>
+                    @Resource.IndexText12 <b>@Resource.IndexText8</b> @Resource.IndexText13
+                </p>
+                <p><b>@Resource.IndexText14</b> — @Resource.IndexText15</p>
+                <p><b>@Resource.IndexText16</b> — @Resource.IndexText17</p>
+                <p><b>@Resource.IndexText18</b> — @Resource.IndexText19</p>
+                <p><b>@Resource.IndexText20</b> — @Resource.IndexText21</p>
+                <p><b>@Resource.IndexText22</b> — @Resource.IndexText23</p>
+                <p><b>@Resource.IndexText24</b> — @Resource.IndexText25</p>
+                <p><b>@Resource.IndexText26</b> — @Resource.IndexText27</p>
+                <a href="/Home/Comment" class="btn btn-primary" style="margin-left:15px">@Resource.IndexBtnGoToComment</a>
+            </div>
+        </div>
+    </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>

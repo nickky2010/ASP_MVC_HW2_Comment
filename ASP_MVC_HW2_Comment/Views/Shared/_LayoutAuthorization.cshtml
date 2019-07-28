@@ -1,0 +1,61 @@
+﻿@using ASP_MVC_HW2_Comment.App_LocalResources
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon " sizes="64x64" type="image/png" href="@Url.Content("~/Images/pokeball_64x64.png")" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <!-- навигация начало -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand"><img src="@Url.Content("~/Images/pokeball_200x200.png")" alt="" height="40" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1"
+                aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar1">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="@Url.Content("~/Home/Index")">@Resource.NavItemMain<span class="sr-only">(current)</span></a></li>
+            </ul>
+            <div class="form-inline my-2 my-lg-0">
+                @using (Html.BeginForm("ChangeLanguage", "Account"))
+                {
+                SelectList languages = new SelectList(@ASP_MVC_HW2_Comment.Models.Languages.List.Keys.ToArray(), Resource.CurrentLang);
+                @Html.DropDownList("langKey", languages, new { @class = "form-control mr-2" })
+                <input type="submit" value="Ok" class="btn btn-primary mr-3" />
+                }
+            </div>
+
+            <form class="form-inline my-2 my-lg-0">
+
+                @if (!User.Identity.IsAuthenticated)
+                {
+                    <a class="btn btn-primary btn-primary-spacing btn-identity" href="@Url.Content("~/Account/Register")" role="button">@Resource.NavBtnRegistration</a>
+                    <a class="btn btn-primary btn-primary-spacing btn-identity" href="@Url.Content("~/Account/Login")" role="button">@Resource.NavBtnLogin</a>
+                }
+                else
+                {
+                    <span class="navbar-text">@Resource.NavLabelUser: @User.Identity.Name</span>
+                    <a class="btn btn-primary btn-identity" href="@Url.Content("~/Account/Logout")" role="button">@Resource.NavBtnLogout</a>
+                }
+            </form>
+        </div>
+    </nav>
+    <!-- навигация конец -->
+    <section class="main-content container" style="margin-top:75px">
+        @RenderBody()
+    </section>
+    <footer>
+        <hr />
+        <p>&copy; 2019-@DateTime.Now.Year - @Resource.Author: @Resource.CopyRight</p>
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

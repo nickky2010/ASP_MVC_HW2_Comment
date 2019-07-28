@@ -1,0 +1,17 @@
+﻿@using ASP_MVC_HW2_Comment.App_LocalResources
+
+@model IEnumerable<BLL.Models.ViewModel.CommentViewModel>
+@foreach (var c in Model)
+{
+    <div class="row m-0 mb-1" style="border: 1px solid rgb(141, 141, 141);border-radius: 5px; box-shadow: 0 2px 4px rgba(255, 251, 0, 0.329), inset 0 0 60px rgba(0,0,0,0.2);">
+        <div class="col-2 p-0" style="border-radius: 5px; background-color:rgba(138, 154, 245, 0.699)">
+            <p class="m-0 p-0" style="color: rgb(30, 0, 165)">@c.Firstname @c.Lastname </p>
+            <p class="m-0 p-0">@c.DateTimeOfCreation.ToShortDateString() @Resource.AtTime @c.DateTimeOfCreation.ToLongTimeString()</p>
+        </div>
+        <div class="col-10" style="border-radius: 5px;">
+            <p class="m-0 p-0">@c.TextMessage</p>
+        </div>
+
+    </div>
+
+}
