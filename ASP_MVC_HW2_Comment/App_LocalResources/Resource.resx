@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AtTime" xml:space="preserve">
+    <value>в</value>
+  </data>
+  <data name="Author" xml:space="preserve">
+    <value>Манько Николай</value>
+  </data>
+  <data name="Blastoise" xml:space="preserve">
+    <value>Бластойз</value>
+  </data>
+  <data name="Bulbasaur" xml:space="preserve">
+    <value>Бульбазавр</value>
+  </data>
+  <data name="Charizard" xml:space="preserve">
+    <value>Чаризард</value>
+  </data>
+  <data name="Charmander" xml:space="preserve">
+    <value>Чармандер</value>
+  </data>
+  <data name="Charmeleon" xml:space="preserve">
+    <value>Чармилеон</value>
+  </data>
+  <data name="CommentBtnComment" xml:space="preserve">
+    <value>Комментировать</value>
+  </data>
+  <data name="CommentDataNotValid" xml:space="preserve">
+    <value>Вы не можете оставить комментарий так как данные не являются валидными</value>
+  </data>
+  <data name="CommentLabelCommentOn" xml:space="preserve">
+    <value>Оставить комментарий</value>
+  </data>
+  <data name="CommentLabelComments" xml:space="preserve">
+    <value>Комментарии</value>
+  </data>
+  <data name="CommentTextMessage" xml:space="preserve">
+    <value>Текст сообщения</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Подтверждение пароля</value>
+  </data>
+  <data name="CopyRight" xml:space="preserve">
+    <value>Все права защищены</value>
+  </data>
+  <data name="CurrentLang" xml:space="preserve">
+    <value>русский</value>
+  </data>
+  <data name="DateTimeCreation" xml:space="preserve">
+    <value>Дата и время создания</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Адрес электронной почты</value>
+  </data>
+  <data name="EnterConfirmPassword" xml:space="preserve">
+    <value>Повторите ввод пароля</value>
+  </data>
+  <data name="EnterEmail" xml:space="preserve">
+    <value>Введите адрес электронной почты</value>
+  </data>
+  <data name="EnterFirstName" xml:space="preserve">
+    <value>Введите имя</value>
+  </data>
+  <data name="EnterLastName" xml:space="preserve">
+    <value>Введите фамилию</value>
+  </data>
+  <data name="EnterLogin" xml:space="preserve">
+    <value>Введите логин</value>
+  </data>
+  <data name="EnterPassword" xml:space="preserve">
+    <value>Введите пароль</value>
+  </data>
+  <data name="EnterTextMessage" xml:space="preserve">
+    <value>Введите текст комментария</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="Forbidden403" xml:space="preserve">
+    <value>Oшибка 403 – доступ запрещен!</value>
+  </data>
+  <data name="Forbidden403Text" xml:space="preserve">
+    <value>Что такое ошибка 403 – доступ запрещен?
+Ошибка доступа 403 происходит, когда веб-страница (или другой ресурс), которую вы пытаетесь открыть в веб-браузере, является ресурсом, к которому у вас ограничен доступ.
+Она называется ошибкой 403 по коду состояния протокола HTTP, который использует веб-сервер для описания ошибки такого рода.
+Обычно это случается по одной из двух причин. Первая заключается в том, что владельцы веб-сервера осознанно установили ограничения доступа и вам действительно запрещен доступ к этому ресурсу. Вторая причина заключается в том, что владельцы веб-сервера случайно установили ограничения и вы не получаете доступ к требуемому ресурсу по ошибке.</value>
+  </data>
+  <data name="Gastly" xml:space="preserve">
+    <value>Гастли</value>
+  </data>
+  <data name="Gengar" xml:space="preserve">
+    <value>Генгар</value>
+  </data>
+  <data name="Grotle" xml:space="preserve">
+    <value>Гротл</value>
+  </data>
+  <data name="Haunter" xml:space="preserve">
+    <value>Хонтер</value>
+  </data>
+  <data name="IndexBtnGoToComment" xml:space="preserve">
+    <value>Перейти к комментариям</value>
+  </data>
+  <data name="IndexText1" xml:space="preserve">
+    <value>«Покемо́н» (яп. ポケットモンスター покэтто монсута: англ. Pokémon, от англ. Pocket Monster — «карманный монстр»)</value>
+  </data>
+  <data name="IndexText10" xml:space="preserve">
+    <value>Покемон</value>
+  </data>
+  <data name="IndexText11" xml:space="preserve">
+    <value>имеет огненный тип, то, скорее всего, он будет уязвим при контакте с водным существом.</value>
+  </data>
+  <data name="IndexText12" xml:space="preserve">
+    <value>Чтобы игра</value>
+  </data>
+  <data name="IndexText13" xml:space="preserve">
+    <value>была не только интересной, но также и имела некоторый баланс, помимо общих характеристик разработчиками были внесены и дополнительные параметры существа. У каждого Покемона есть жизни, скорость, а также атака и защита, которые разделяются на обычную и особую. Виды Покемонов могут сильно отличаться по всем этим параметрам. Если первый Покемон не может особо похвастаться ими, то по мере того, как увеличивается редкость существ, их характеристики растут. Особенно, когда они эволюционируют. Иными словами, такая таблица крутости Покемонов позволит быстро выявить все явные плюсы и недостатки каждого персонажа.</value>
+  </data>
+  <data name="IndexText14" xml:space="preserve">
+    <value>Бульбаза́вр (яп. フシギダネ Фусигиданэ, англ. Bulbasaur)</value>
+  </data>
+  <data name="IndexText15" xml:space="preserve">
+    <value>вместе с Чармандером и Сквиртлом один из стартовых покемонов региона Канто. Его типы — травяной и ядовитый. На спине у него растёт крупная зелёная луковица: когда Бульбазавр появляется на свет, у него на спине есть зерно, которое позже в неё вырастает. Луковица позволяет Бульбазавру фотосинтезировать, и поэтому этот покемон любит проводить много времени на солнце.</value>
+  </data>
+  <data name="IndexText16" xml:space="preserve">
+    <value>Чарманде́р (яп. ヒトカゲ Хитокагэ, англ. Charmander)</value>
+  </data>
+  <data name="IndexText17" xml:space="preserve">
+    <value>огненный покемон-ящерица, вместе со Сквиртлом и Бульбазавром является стартовым покемоном региона Канто. На кончике хвоста Чармандера горит пламя, по которому можно узнать его самочувствие и настроение. Если пламя у него на хвосте погаснет, то Чармандер может погибнуть. Чармандер предпочитает тёплые места, когда начинается дождь, он старается закрыть пламя у него на хвосте от дождя.</value>
+  </data>
+  <data name="IndexText18" xml:space="preserve">
+    <value>Сквиртл (яп. ゼニガメ Дзэнигамэ, англ. Squirtle)</value>
+  </data>
+  <data name="IndexText19" xml:space="preserve">
+    <value>водный покемон-черепаха, как и Чармандер и Бульбазавр, стартовый покемон региона Канто. В случае опасности Сквиртл прячется в панцирь, мягкий при рождении покемона, но вскоре затвердевающий. Панцирь Сквиртла предназначен не только для защиты: его обтекаемая форма позволяет покемону быстрее плавать в воде. Сквиртл способен производить по противнику мощные и точные выстрелы водой изо рта.</value>
+  </data>
+  <data name="IndexText2" xml:space="preserve">
+    <value>популярная медиафраншиза, созданная Сатоси Тадзири в 1996 году. Товарный знак «Покемон» принадлежит Nintendo, одной из крупнейших фирм-разработчиков видеоигр. «Покемон» впервые появился как пара игр, разработанных студией Game Freak, и после этого стал второй в мире по популярности серией компьютерных игр, уступив лишь другой серии игр Nintendo, Mario.
+Само слово «покемон» обозначает существо, обладающее сверхъестественными способностями. На данный момент существует 802 разновидности покемонов. В вымышленной истории «Покемона» люди, называющиеся тренерами покемонов, обучают их для сражений с покемонами других тренеров. Бои проходят до момента, пока один из покемонов не падает без сознания или его тренер не сдаётся, — до смерти схватки не происходят никогда. Как правило, сильные и опытные тренеры покемонов пользуются уважением.</value>
+  </data>
+  <data name="IndexText20" xml:space="preserve">
+    <value>Пикачу́ (яп. ピカチュウ Пикатю:, англ. Pikachu)</value>
+  </data>
+  <data name="IndexText21" xml:space="preserve">
+    <value>покемон-мышь электрического типа, самый узнаваемый покемон, талисман серии, в последние годы ставший иконой японской поп-культуры. Пикачу способен высвобождать электрическую энергию, запасённую у него за щёчками, сила удара сравнима с молнией. Если собирается группа Пикачу, то их совместная энергия может вызвать грозу. Пикачу используют электричество, чтобы поджаривать ягоды и употреблять их в пищу. Этот покемон достаточно своевольный и не любит ограничений, поэтому многие тренеры держат их вне покеболов.</value>
+  </data>
+  <data name="IndexText22" xml:space="preserve">
+    <value>Ма́чоп (яп. ワンリキー Ванкири:, англ. Machop)</value>
+  </data>
+  <data name="IndexText23" xml:space="preserve">
+    <value>покемон боевого типа. Обитает в горах, далеко от цивилизации. Он обожает тренировки и обладает талантом к боевым искусствам. Несмотря на свой невысокий рост, обладает большой физической силой: он способен поднять тяжесть, которую может поднять сотня взрослых мужчин. Мачоп может коротать время, качая мышцы с помощью валуна, но он может остаться недовольным результатом, даже если тренировался весь день.</value>
+  </data>
+  <data name="IndexText24" xml:space="preserve">
+    <value>Га́стли (яп. ゴース Го:су, англ. Gastly)</value>
+  </data>
+  <data name="IndexText25" xml:space="preserve">
+    <value>покемон призрачного и ядовитого типа. Тело Гастли состоит почти полностью из газа: он способен обволакивать противника и незаметно погружать его в сон. Живёт, как правило, в старых заброшенных домах. Будучи газообразным, может проникнуть почти куда угодно, но при этом его легко сдувает ветром.</value>
+  </data>
+  <data name="IndexText26" xml:space="preserve">
+    <value>Тортвиг (англ. Turtwig)</value>
+  </data>
+  <data name="IndexText27" xml:space="preserve">
+    <value>покемон травяного типа из четвёртого поколения покемонов. "Панцирь" сделан из почвы, и покемон, обычно, живёт вблизи воды, чтобы почва была всегда влажная. Однако, в отличие от черепахи, этот покемон очень подвижен, может быстро бегать и прыгать. На голове покемона находится веточка с двумя листочками, с помощью которых он получает энергию посредством фотосинтеза.</value>
+  </data>
+  <data name="IndexText3" xml:space="preserve">
+    <value>Само слово</value>
+  </data>
+  <data name="IndexText4" xml:space="preserve">
+    <value>«покемон»</value>
+  </data>
+  <data name="IndexText5" xml:space="preserve">
+    <value>обозначает существо, обладающее сверхъестественными способностями. На данный момент существует 802 разновидности покемонов. В вымышленной истории «Покемона» люди, называющиеся тренерами покемонов, обучают их для сражений с покемонами других тренеров. Бои проходят до момента, пока один из покемонов не падает без сознания или его тренер не сдаётся, — до смерти схватки не происходят никогда. Как правило, сильные и опытные тренеры покемонов пользуются уважением.</value>
+  </data>
+  <data name="IndexText6" xml:space="preserve">
+    <value>Вы также сможете отследить развитие Покемона. Эволюция чаще всего имеет три стадии, однако иногда существо может и вовсе не развиваться. Помните, что одинаковые Покемоны могут иметь разные характеристики. Уровни Покемонов влияют на их рейтинг параметров, а также определяют, сколько атаки у них будет. Как правило, редкие Покемоны – это более сильные существа.</value>
+  </data>
+  <data name="IndexText7" xml:space="preserve">
+    <value>Но даже самые сильные</value>
+  </data>
+  <data name="IndexText8" xml:space="preserve">
+    <value>Покемоны</value>
+  </data>
+  <data name="IndexText9" xml:space="preserve">
+    <value>имеют какие-то слабости. К примеру, если</value>
+  </data>
+  <data name="Ivysaur" xml:space="preserve">
+    <value>Ивизавр</value>
+  </data>
+  <data name="LabelLogin" xml:space="preserve">
+    <value>Логин</value>
+  </data>
+  <data name="LabelPassword" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Логин</value>
+  </data>
+  <data name="LoginBtnSubmit" xml:space="preserve">
+    <value>Вход</value>
+  </data>
+  <data name="LoginHeader" xml:space="preserve">
+    <value>Вход</value>
+  </data>
+  <data name="Machamp" xml:space="preserve">
+    <value>Мачамп</value>
+  </data>
+  <data name="Machoke" xml:space="preserve">
+    <value>Мачоук</value>
+  </data>
+  <data name="Machop" xml:space="preserve">
+    <value>Мачоп</value>
+  </data>
+  <data name="NavBtnLogin" xml:space="preserve">
+    <value>Вход</value>
+  </data>
+  <data name="NavBtnLogout" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="NavBtnRegistration" xml:space="preserve">
+    <value>Регистрация</value>
+  </data>
+  <data name="NavItemMain" xml:space="preserve">
+    <value>Главная</value>
+  </data>
+  <data name="NavLabelUser" xml:space="preserve">
+    <value>Пользователь</value>
+  </data>
+  <data name="NotFound404" xml:space="preserve">
+    <value>Ошибка 404. Ресурс не найден!</value>
+  </data>
+  <data name="NotFound404Text" xml:space="preserve">
+    <value>Ошибка 404 означает, что пользователь перешел на страницу, где на данный момент отсутствует нужный текст и какой-либо контент. Несуществующая страница могла быть здесь раньше, возможно, ее удалили, переместили в другую категорию или подкорректировали название, в результате чего изменился URL.</value>
+  </data>
+  <data name="NotRegistered" xml:space="preserve">
+    <value>не зарегистрирован</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="PasswordsDoNotMatch" xml:space="preserve">
+    <value>Пароли не совпадают</value>
+  </data>
+  <data name="Pichu" xml:space="preserve">
+    <value>Пичу</value>
+  </data>
+  <data name="Pikachu" xml:space="preserve">
+    <value>Пикачу</value>
+  </data>
+  <data name="Raichu" xml:space="preserve">
+    <value>Райчу</value>
+  </data>
+  <data name="RegistrationBtnSubmit" xml:space="preserve">
+    <value>Регистрация</value>
+  </data>
+  <data name="RegistrationHeader" xml:space="preserve">
+    <value>Регистрация</value>
+  </data>
+  <data name="RegistrationLabelConfirmPassword" xml:space="preserve">
+    <value>Подтверждение пароля</value>
+  </data>
+  <data name="RegistrationLabelEmail" xml:space="preserve">
+    <value>Адрес электронной почты</value>
+  </data>
+  <data name="RegistrationLabelName" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="RegistrationLabelSurname" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="Squirtle" xml:space="preserve">
+    <value>Сквиртл</value>
+  </data>
+  <data name="SuccessfullyRegistered" xml:space="preserve">
+    <value>Вы были успешно зарегистрированы. Используйте свой логин и пароль для входа на сайт.</value>
+  </data>
+  <data name="Torterra" xml:space="preserve">
+    <value>Тортерра</value>
+  </data>
+  <data name="Turtwig" xml:space="preserve">
+    <value>Туртвиг</value>
+  </data>
+  <data name="ValidateLogin" xml:space="preserve">
+    <value>Логин должен состоять из трех букв, знака подчеркивания и трех цифр</value>
+  </data>
+  <data name="ValidateStringLengthFirstName" xml:space="preserve">
+    <value>Количество символов должно быть в пределах от 2 до 30</value>
+  </data>
+  <data name="ValidateStringLengthLastName" xml:space="preserve">
+    <value>Количество символов должно быть в пределах от 2 до 30</value>
+  </data>
+  <data name="ValidateStringLengthPassword" xml:space="preserve">
+    <value>Количество символов должно быть в пределах от 6 до 10</value>
+  </data>
+  <data name="ValidateStringLengthTextMessage" xml:space="preserve">
+    <value>Количество символов должно быть в пределах от 2 до 300</value>
+  </data>
+  <data name="Venusaur" xml:space="preserve">
+    <value>Венузавр</value>
+  </data>
+  <data name="Wartortle" xml:space="preserve">
+    <value>Вартортл</value>
+  </data>
+  <data name="WrongLoginPassword" xml:space="preserve">
+    <value>Неверный логин или пароль</value>
+  </data>
+  <data name="СanNotLeaveComment" xml:space="preserve">
+    <value>Вы не можете оставить комментарий так как пользователь</value>
+  </data>
+</root>

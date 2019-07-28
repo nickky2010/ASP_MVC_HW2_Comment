@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AtTime" xml:space="preserve">
+    <value>at</value>
+  </data>
+  <data name="Author" xml:space="preserve">
+    <value>Mikalai Manko</value>
+  </data>
+  <data name="Blastoise" xml:space="preserve">
+    <value>Blastoise</value>
+  </data>
+  <data name="Bulbasaur" xml:space="preserve">
+    <value>Bulbasaur</value>
+  </data>
+  <data name="Charizard" xml:space="preserve">
+    <value>Charizard</value>
+  </data>
+  <data name="Charmander" xml:space="preserve">
+    <value>Charmander</value>
+  </data>
+  <data name="Charmeleon" xml:space="preserve">
+    <value>Charmeleon</value>
+  </data>
+  <data name="CommentBtnComment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="CommentDataNotValid" xml:space="preserve">
+    <value>You can not leave a comment because the data is not valid</value>
+  </data>
+  <data name="CommentLabelCommentOn" xml:space="preserve">
+    <value>Comment on</value>
+  </data>
+  <data name="CommentLabelComments" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="CommentTextMessage" xml:space="preserve">
+    <value>Text message</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Confirm password</value>
+  </data>
+  <data name="CopyRight" xml:space="preserve">
+    <value>All right reserved</value>
+  </data>
+  <data name="CurrentLang" xml:space="preserve">
+    <value>english</value>
+  </data>
+  <data name="DateTimeCreation" xml:space="preserve">
+    <value>Date and time of creation</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EnterConfirmPassword" xml:space="preserve">
+    <value>Confirm password</value>
+  </data>
+  <data name="EnterEmail" xml:space="preserve">
+    <value>Enter email</value>
+  </data>
+  <data name="EnterFirstName" xml:space="preserve">
+    <value>Enter first name</value>
+  </data>
+  <data name="EnterLastName" xml:space="preserve">
+    <value>Enter last name</value>
+  </data>
+  <data name="EnterLogin" xml:space="preserve">
+    <value>Enter login</value>
+  </data>
+  <data name="EnterPassword" xml:space="preserve">
+    <value>Enter password</value>
+  </data>
+  <data name="EnterTextMessage" xml:space="preserve">
+    <value>Enter comment text</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>First name</value>
+  </data>
+  <data name="Forbidden403" xml:space="preserve">
+    <value>Error 403 - Access denied!</value>
+  </data>
+  <data name="Forbidden403Text" xml:space="preserve">
+    <value>What is error 403 - access denied?
+Access error 403 occurs when a web page (or other resource) that you are trying to open in a web browser is a resource to which you have restricted access.
+It is called Error 403 by the HTTP status code, which the web server uses to describe this kind of error.
+This usually happens for one of two reasons. The first is that the web server owners have consciously set access restrictions and you are really denied access to this resource. The second reason is that the owners of the web server accidentally set restrictions and you do not get access to the required resource by mistake.</value>
+  </data>
+  <data name="Gastly" xml:space="preserve">
+    <value>Gastly</value>
+  </data>
+  <data name="Gengar" xml:space="preserve">
+    <value>Gengar</value>
+  </data>
+  <data name="Grotle" xml:space="preserve">
+    <value>Grotle</value>
+  </data>
+  <data name="Haunter" xml:space="preserve">
+    <value>Haunter</value>
+  </data>
+  <data name="IndexBtnGoToComment" xml:space="preserve">
+    <value>Go to comment</value>
+  </data>
+  <data name="IndexText1" xml:space="preserve">
+    <value>"Pokemon" (Japanese ポ ケ ッ ト モ タ ー Pocket Monsuta: Eng. Pokémon, from Eng. Pocket Monster ー "Pocket Monster")</value>
+  </data>
+  <data name="IndexText10" xml:space="preserve">
+    <value>Pokémon</value>
+  </data>
+  <data name="IndexText11" xml:space="preserve">
+    <value>is a fiery type, then most likely it will be vulnerable when in contact with a water creature.</value>
+  </data>
+  <data name="IndexText12" xml:space="preserve">
+    <value>So that the game</value>
+  </data>
+  <data name="IndexText13" xml:space="preserve">
+    <value>was not only interesting, but also had some balance, in addition to the general characteristics, the developers introduced additional parameters of the creature. Each Pokemon has life, speed, as well as attack and defense, which are divided into normal and special. Types of Pokemon can vary greatly in all these parameters. If the first Pokemon can not boast of them, then as the rarity of creatures increases, their characteristics grow. Especially when they evolve. In other words, such a table of Pokémon coolness will allow you to quickly identify all the obvious advantages and disadvantages of each character.</value>
+  </data>
+  <data name="IndexText14" xml:space="preserve">
+    <value>Bulbazavr (Japanese フシギダネ Fusigydane, eng. Bulbasaur)</value>
+  </data>
+  <data name="IndexText15" xml:space="preserve">
+    <value>together with Charmander and Squirtl one of the starting pokemon of the Kanto region. Its types are herbal and poisonous. A large green bulb grows on its back: when Bulbasaurus is born, it has grain on its back, which later grows into it. The bulb allows Bulbasauru to photosynthesize, and therefore this Pokemon likes to spend a lot of time in the sun.</value>
+  </data>
+  <data name="IndexText16" xml:space="preserve">
+    <value>Charmander (Jap. ヒトカゲ Chitokage, Eng. Charmander)</value>
+  </data>
+  <data name="IndexText17" xml:space="preserve">
+    <value>is a fire pokemon lizard, along with Squirtl and Bulbasaur is the starting pokemon of the Kanto region. At the tip of the tail of Charmander, a flame is burning, by which one can recognize his state of health and mood. If the flame on his tail goes out, Charmander may die. Charmander prefers warm places, when it starts to rain, he tries to close the flame on his tail from the rain.</value>
+  </data>
+  <data name="IndexText18" xml:space="preserve">
+    <value>Squirtl (Jap. ゼ ニ ガ メ Dzenigame, Eng. Squirtle)</value>
+  </data>
+  <data name="IndexText19" xml:space="preserve">
+    <value>is a water Pokémon turtle, like Charmander and Bulbasaurus, the starting Pokémon of the Kanto region. In case of danger Squirtle hides in its carapace, soft at birth, but soon solidified by the pokemon. Squirtla's armor is designed not only for protection: its streamlined shape allows the Pokémon to swim faster in the water. Squirtl is capable of producing powerful and accurate water from the mouth at the enemy.</value>
+  </data>
+  <data name="IndexText2" xml:space="preserve">
+    <value>popular media franchise created by Satoshi Tajiri in 1996. The Pokémon trademark is owned by Nintendo, one of the largest video game developers. Pokemon first appeared as a pair of games developed by Game Freak, and after that became the second most popular series of computer games in the world, second only to the other Nintendo game series, Mario.
+The very word "pokemon" means a creature with supernatural abilities. Currently there are 802 pokemon varieties. In the fictional Pokémon story, people called Pokémon trainers train them to fight Pokémon other coaches. Fights are held until the moment when one of the Pokemon falls unconscious or his trainer does not give up - until the death of a bout they never occur. As a rule, strong and experienced Pokemon trainers are respected.</value>
+  </data>
+  <data name="IndexText20" xml:space="preserve">
+    <value>Пикачу́ (яп. ピカチュウ Пикатю:, англ. Pikachu)</value>
+  </data>
+  <data name="IndexText21" xml:space="preserve">
+    <value>is an electric-type Pokémon mouse, the most recognizable Pokémon, the talisman of the series, which in recent years has become an icon of Japanese pop culture. Pikachu is able to release the electrical energy stored in his cheek, the force of the blow is comparable to lightning. If the group is going to Pikachu, then their joint energy can cause a thunderstorm. Pikachu uses electricity to roast the berries and eat them. This pokemon is quite self-willed and does not like restrictions, so many coaches keep them outside pokeball.</value>
+  </data>
+  <data name="IndexText22" xml:space="preserve">
+    <value>Machop (Jap. ワ ン リ キ ー Vankiri :, Eng. Machop)</value>
+  </data>
+  <data name="IndexText23" xml:space="preserve">
+    <value>is a combat-type Pokémon. It lives in the mountains, far from civilization. He loves training and has a talent for martial arts. Despite his short stature, he has great physical strength: he is able to lift a weight that can be lifted by hundreds of adult men. A machope can pass the time by shaking his muscles with a boulder, but he can be unhappy with the result, even if he has been training all day.</value>
+  </data>
+  <data name="IndexText24" xml:space="preserve">
+    <value>Gastly (Jap. ゴ ー ス Guo: soo, English Gastly)</value>
+  </data>
+  <data name="IndexText25" xml:space="preserve">
+    <value>a pokemon of the ghostly and poisonous type. Gastly's body consists almost entirely of gas: it is able to envelop the enemy and quietly plunge it into sleep. Lives, as a rule, in old abandoned houses. Being gaseous, can penetrate almost anywhere, but at the same time it is easily blown away by the wind.</value>
+  </data>
+  <data name="IndexText26" xml:space="preserve">
+    <value>Tortvig</value>
+  </data>
+  <data name="IndexText27" xml:space="preserve">
+    <value>grass type Pokemon from the fourth generation of Pokemon. The “shell” is made of soil, and a pokemon usually lives near water so that the soil is always wet. However, unlike the tortoise, this pokemon is very mobile, it can run and jump fast. On the head of the pokemon there is a branch with two leaves with which it receives energy through photosynthesis.</value>
+  </data>
+  <data name="IndexText3" xml:space="preserve">
+    <value>The word</value>
+  </data>
+  <data name="IndexText4" xml:space="preserve">
+    <value>"pokemon"</value>
+  </data>
+  <data name="IndexText5" xml:space="preserve">
+    <value>means a creature with supernatural abilities. Currently there are 802 pokemon varieties. In the fictional Pokémon story, people called Pokémon trainers train them to fight Pokémon other coaches. Fights are held until the moment when one of the Pokemon falls unconscious or his trainer does not give up - until the death of a bout they never occur. As a rule, strong and experienced Pokemon trainers are respected.</value>
+  </data>
+  <data name="IndexText6" xml:space="preserve">
+    <value>You can also track the development of Pokemon. Evolution often has three stages, but sometimes a creature may not develop at all. Remember that the same Pokemon may have different characteristics. Levels of Pokemon affect their rating options, as well as determine how much attack they will have. As a rule, rare Pokemons are more powerful creatures.</value>
+  </data>
+  <data name="IndexText7" xml:space="preserve">
+    <value>But even the strongest</value>
+  </data>
+  <data name="IndexText8" xml:space="preserve">
+    <value>Pokemon</value>
+  </data>
+  <data name="IndexText9" xml:space="preserve">
+    <value>have some weaknesses. For example, if</value>
+  </data>
+  <data name="Ivysaur" xml:space="preserve">
+    <value>Ivysaur</value>
+  </data>
+  <data name="LabelLogin" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="LabelPassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Last name</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="LoginBtnSubmit" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginHeader" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Machamp" xml:space="preserve">
+    <value>Machamp</value>
+  </data>
+  <data name="Machoke" xml:space="preserve">
+    <value>Machoke</value>
+  </data>
+  <data name="Machop" xml:space="preserve">
+    <value>Machop</value>
+  </data>
+  <data name="NavBtnLogin" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="NavBtnLogout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="NavBtnRegistration" xml:space="preserve">
+    <value>Registration</value>
+  </data>
+  <data name="NavItemMain" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="NavLabelUser" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="NotFound404" xml:space="preserve">
+    <value>Error 404. Resource not found!</value>
+  </data>
+  <data name="NotFound404Text" xml:space="preserve">
+    <value>Error 404 means that the user has moved to a page where the necessary text and any content is currently missing. A non-existent page could have been here before, perhaps it was deleted, moved to another category or corrected the title, as a result of which the URL changed.</value>
+  </data>
+  <data name="NotRegistered" xml:space="preserve">
+    <value>is not registered</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PasswordsDoNotMatch" xml:space="preserve">
+    <value>Passwords do not match</value>
+  </data>
+  <data name="Pichu" xml:space="preserve">
+    <value>Pichu</value>
+  </data>
+  <data name="Pikachu" xml:space="preserve">
+    <value>Pikachu</value>
+  </data>
+  <data name="Raichu" xml:space="preserve">
+    <value>Raichu</value>
+  </data>
+  <data name="RegistrationBtnSubmit" xml:space="preserve">
+    <value>Registration</value>
+  </data>
+  <data name="RegistrationHeader" xml:space="preserve">
+    <value>Registration</value>
+  </data>
+  <data name="RegistrationLabelConfirmPassword" xml:space="preserve">
+    <value>Confirm password</value>
+  </data>
+  <data name="RegistrationLabelEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="RegistrationLabelName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="RegistrationLabelSurname" xml:space="preserve">
+    <value>Surname</value>
+  </data>
+  <data name="Squirtle" xml:space="preserve">
+    <value>Squirtle</value>
+  </data>
+  <data name="SuccessfullyRegistered" xml:space="preserve">
+    <value>You have been successfully registered. Use your username and password to access the site.</value>
+  </data>
+  <data name="Torterra" xml:space="preserve">
+    <value>Torterra</value>
+  </data>
+  <data name="Turtwig" xml:space="preserve">
+    <value>Turtwig</value>
+  </data>
+  <data name="ValidateLogin" xml:space="preserve">
+    <value>Username should consist of three letters, an underscore and three digits</value>
+  </data>
+  <data name="ValidateStringLengthFirstName" xml:space="preserve">
+    <value>The number of characters must be between 2 and 30</value>
+  </data>
+  <data name="ValidateStringLengthLastName" xml:space="preserve">
+    <value>The number of characters must be between 2 and 30</value>
+  </data>
+  <data name="ValidateStringLengthPassword" xml:space="preserve">
+    <value>The number of characters must be between 6 and 10</value>
+  </data>
+  <data name="ValidateStringLengthTextMessage" xml:space="preserve">
+    <value>The number of characters must be between 2 and 300</value>
+  </data>
+  <data name="Venusaur" xml:space="preserve">
+    <value>Venusaur</value>
+  </data>
+  <data name="Wartortle" xml:space="preserve">
+    <value>Wartortle</value>
+  </data>
+  <data name="WrongLoginPassword" xml:space="preserve">
+    <value>Wrong login or password</value>
+  </data>
+  <data name="СanNotLeaveComment" xml:space="preserve">
+    <value>You cannot post a comment because user</value>
+  </data>
+</root>
