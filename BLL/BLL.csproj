@@ -103,11 +103,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Infrastructure\Dependencies\InterfacesRegistrations.cs" />
-    <Compile Include="Infrastructure\Mapping\AutoMapperConfiguration.cs" />
     <Compile Include="Infrastructure\Mapping\Profiles\DTOtoModel\CommentDTOtoModelProfile.cs" />
     <Compile Include="Infrastructure\Mapping\Profiles\DTOtoModel\RoleDTOtoModelProfile.cs" />
     <Compile Include="Infrastructure\Mapping\Profiles\DTOtoModel\UserDTOtoModelProfile.cs" />
-    <Compile Include="Infrastructure\Mapping\Profiles\DTOtoViewModel\CommentDTOtoViewModelProfile.cs" />
     <Compile Include="Infrastructure\Models\OperationDetails.cs" />
     <Compile Include="Interfaces\IDataBaseService.cs" />
     <Compile Include="Interfaces\IUnitOfWorkService.cs" />
@@ -116,10 +114,6 @@
     <Compile Include="Models\DTO\Account\UserDTO.cs" />
     <Compile Include="Models\DTO\Account\UserProfileDTO.cs" />
     <Compile Include="Models\DTO\CommentDTO.cs" />
-    <Compile Include="Models\ViewModel\CommentViewModel.cs" />
-    <Compile Include="Models\ViewModel\LoginViewModel.cs" />
-    <Compile Include="Models\ViewModel\PokemonViewModel.cs" />
-    <Compile Include="Models\ViewModel\RegisterViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ApplicationUserManager.cs" />
     <Compile Include="Services\CommentService.cs" />

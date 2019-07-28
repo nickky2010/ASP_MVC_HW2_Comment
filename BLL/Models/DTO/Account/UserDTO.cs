@@ -8,6 +8,7 @@ namespace ASP_MVC_HW2_Comment.Models.Account
         public string Firstname { get; set; }
         public string Lastname { get; set; }
         public string Login { get; set; }
+        public string Password { get; set; }
         public RoleDTO Role { get; set; }
         public ICollection<CommentDTO> CommentDTOs { get; set; }
         public UserDTO()

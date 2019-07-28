@@ -1,7 +1,6 @@
 ﻿using ASP_MVC_HW2_Comment.BLL.Infrastructure.Models;
 using ASP_MVC_HW2_Comment.DAL.Models.Account;
 using ASP_MVC_HW2_Comment.BLL.Interfaces;
-using ASP_MVC_HW2_Comment.Models.ViewModel;
 using BLL.Interfaces;
 using DAL.Interfaces;
 using Microsoft.AspNet.Identity;
@@ -9,6 +8,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using ASP_MVC_HW2_Comment.DAL.EF.Contexts;
+using ASP_MVC_HW2_Comment.Models.Account;
 
 namespace ASP_MVC_HW2_Comment.Services
 {
@@ -23,25 +23,25 @@ namespace ASP_MVC_HW2_Comment.Services
             IdentityUnitOfWork = uow.GetIUnitOfWorkIdentityContext;
         }
 
-        public async Task<OperationDetails> CreateAsync(RegisterViewModel registerViewModel)
+        public async Task<OperationDetails> CreateAsync(UserDTO userDTO)
         {
-            User user = await IdentityUnitOfWork.UserManager.FindByEmailAsync(registerViewModel.Email);
+            User user = await IdentityUnitOfWork.UserManager.FindByEmailAsync(userDTO.Email);
             if (user == null)
             {
                 user = new User
                 {
-                    UserName = registerViewModel.Login,
-                    Email = registerViewModel.Email                    
+                    UserName = userDTO.Login,
+                    Email = userDTO.Email                    
                 };
-                var result = await IdentityUnitOfWork.UserManager.CreateAsync(user, registerViewModel.Password);
+                var result = await IdentityUnitOfWork.UserManager.CreateAsync(user, userDTO.Password);
                 if (result.Errors.Count() > 0)
                     return new OperationDetails(false, result.Errors.FirstOrDefault(), "");
-                User newUser = await IdentityUnitOfWork.UserManager.FindByEmailAsync(registerViewModel.Email);
+                User newUser = await IdentityUnitOfWork.UserManager.FindByEmailAsync(userDTO.Email);
                 UserProfile clientProfile = new UserProfile
                 {
                     Id = newUser.Id,
-                    Firstname = registerViewModel.Firstname,
-                    Lastname = registerViewModel.Lastname,
+                    Firstname = userDTO.Firstname,
+                    Lastname = userDTO.Lastname,
                     UserName = newUser.UserName,
                     UserId = newUser.Id
                 };
@@ -61,10 +61,10 @@ namespace ASP_MVC_HW2_Comment.Services
             return userProfile.Id;
         }
 
-        public async Task<ClaimsIdentity> AuthenticateAsync(LoginViewModel loginViewModel)
+        public async Task<ClaimsIdentity> AuthenticateAsync(UserDTO userDTO)
         {
             ClaimsIdentity claim = null;
-            User user = await IdentityUnitOfWork.UserManager.FindAsync(loginViewModel.Login, loginViewModel.Password);
+            User user = await IdentityUnitOfWork.UserManager.FindAsync(userDTO.Login, userDTO.Password);
             // авторизуем
             if (user != null)
                 claim = await IdentityUnitOfWork.UserManager.CreateIdentityAsync(user, DefaultAuthenticationTypes.ApplicationCookie);
@@ -72,9 +72,9 @@ namespace ASP_MVC_HW2_Comment.Services
         }
 
         //// начальная инициализация бд
-        public async Task SetInitialDataAsync(RegisterViewModel registerViewModel)
+        public async Task SetInitialDataAsync(UserDTO userDTO)
         {
-            await CreateAsync(registerViewModel);
+            await CreateAsync(userDTO);
         }
 
         public void Dispose()
