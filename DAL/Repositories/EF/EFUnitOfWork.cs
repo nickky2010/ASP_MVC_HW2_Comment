@@ -1,15 +1,15 @@
-﻿using ASP_MVC_HW2_Comment.DAL.Models;
+﻿using ASP_MVC_HW2_Comment.DAL.EF.Contexts;
+using ASP_MVC_HW2_Comment.DAL.Models;
 using ASP_MVC_HW2_Comment.DAL.Models.Account;
 using DAL.Interfaces;
 using DAL.Repositories.EF.ModelRepositories;
 using System;
-using System.Data.Entity;
 using System.Threading.Tasks;
 
 namespace DAL.Repositories.EF
 {
     public class EFUnitOfWork<C> : IUnitOfWork<C>
-        where C : DbContext
+        where C : PokemonContext
     {
         private C context;
 

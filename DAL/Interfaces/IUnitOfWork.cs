@@ -1,5 +1,6 @@
 ﻿using ASP_MVC_HW2_Comment.DAL.Models;
 using ASP_MVC_HW2_Comment.DAL.Models.Account;
+using Microsoft.Extensions.Localization;
 using System;
 using System.Data.Entity;
 using System.Threading.Tasks;
